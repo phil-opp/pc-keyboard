@@ -276,7 +276,7 @@ where
     S: ScancodeSet
 {
     /// Make a new Keyboard object with the given layout.
-    pub fn new(_layout: T, _set: S) -> Keyboard<T, S> {
+    pub const fn new(_layout: T, _set: S) -> Keyboard<T, S> {
         Keyboard {
             register: 0,
             num_bits: 0,
